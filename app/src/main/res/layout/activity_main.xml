@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/picsignup"
+    android:textAlignment="center"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/TextViewSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:shadowColor="#3F51B5"
+        android:text="Log in as"
+        android:textColor="#000000"
+        android:textColorHighlight="#3F51B5"
+        android:textColorHint="#3F51B5"
+        android:textColorLink="#3F51B5"
+        android:textSize="34sp" />
+
+    <Button
+        android:id="@+id/rider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextViewSignUp"
+        android:layout_toLeftOf="@id/TextViewSignUp"
+        android:backgroundTint="#000000"
+        android:onClick="buttonClickPassenger"
+        android:text="Passenger"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/driver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextViewSignUp"
+        android:layout_toRightOf="@id/TextViewSignUp"
+        android:backgroundTint="#000000"
+        android:text="driver"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:onClick="buttonClickDriver"/>
+
+    <Button
+        android:id="@+id/LogOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="#000000"
+        android:text="Log Out"
+        android:textSize="16sp"
+        android:onClick="logout"
+        android:textStyle="bold" />
+</RelativeLayout>
